@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Control Type</th>
+        <th>Data</th>
+        <th>Control</th>
+      </tr>
+      <tr>
+        <td>Text box</td>
+        <td>Name:</td>
+
+        <td>
+          <form>
+            <input type="text" maxlength="4" value="Enter Name" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td>Password:</td>
+        <td>
+          <form>
+            <input type="password" maxlength="4" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Text area</td>
+        <td>Address:</td>
+        <td>
+          <form>
+            <textarea
+              name="message"
+              rows="5"
+              cols="20"
+              style="width: 165px; height: 78px"
+            >
+Enter address</textarea
+            >
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Drop down list</td>
+        <td>Area:</td>
+        <td>
+          <select name="possiton">
+            <option value="Center">Center</option>
+            <option value="Top">top</option>
+            <option value="Bottom">bottom</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Check box</td>
+        <td>Hobbies:</td>
+        <td>
+          <input type="checkbox" name="sport" value="sport" /> Sport<br />
+          <input type="checkbox" name="Reading" value="reading" /> Reading<br />
+          <input type="checkbox" name="T.V" value="T.V" /> T.V<br />
+          <input type="checkbox" name="Internet" value="Internet" /> Internet
+        </td>
+      </tr>
+      <tr>
+        <td>Radio Buttons</td>
+        <td>Gender:</td>
+        <td>
+          <fieldset>
+            <legend>Gender selection</legend>
+            <input
+              type="radio"
+              name="radiobutton"
+              value="Male"
+              checked
+            />Male<br />
+            <input
+              type="radio"
+              name="radiobutton"
+              value="Female"
+              checked
+            />Female
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td>File upload</td>
+        <td>Your image:</td>
+        <td>
+          <input type="file" id="myFile" name="choose image" />
+        </td>
+      </tr>
+      <tr>
+        <td>Buttons</td>
+        <td>Actions:</td>
+        <td>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+          <button type="button" onclick="alert('Hello World')">Button</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
